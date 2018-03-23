@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         gSchool Standards to Checkpoints Mapping
+// @name         gSchool LEARN Check-Standards
 // @namespace    petesilva
 // @version      0.1
 // @description  Make it so you can click through standards to checkpoints
