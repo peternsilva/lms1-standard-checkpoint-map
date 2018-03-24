@@ -35,11 +35,12 @@ $(document).ready(() => {
         } else {
           // parse response to JSON then deal with response data
           if(res) {
-            var json = res.json()
+            var json = res.json();
             if(json) {
               json.then((data) => {
                 // Defense
-                if( typeof data !== 'object' ||
+                if(
+                    typeof data !== 'object' ||
                     !data.hasOwnProperty('link')
                 ) {
                   throw new Error(`Couldn't find checkpoint for standard:${standardId}`);
