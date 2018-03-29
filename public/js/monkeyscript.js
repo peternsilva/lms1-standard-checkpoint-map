@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         gSchool LEARN Check-Standards
 // @namespace    petesilva
-// @version      0.1
+// @version      0.1.1
 // @description  Make it so you can click through standards to checkpoints
 // @author       Pete Silva
 // @require      http://code.jquery.com/jquery-latest.js
@@ -20,7 +20,7 @@ $(document).ready( function() {
   var cohortId = 372;   // Only seems to work for g81
 
 
-  $('.performances-container table tr td.standard-core a').each( function() {
+  $('.performances-container table tr td.standard-core a, .performances-container table tr td.standard-elective a').each( function() {
 
     if ($(this).attr('href')) {
       var standardId = $(this).attr('href').substring(1);
